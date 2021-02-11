@@ -18,7 +18,7 @@ export default ({ notes }) => {
       >
         {notes.map((note) => (
           <div sx={{ width: "33%", p: 2 }}>
-            <Link key={note.id} href={`/notes/${note.id}`}>
+            <Link key={note.id} href={`/notes/${note.id}`} passHref>
               <a sx={{ textDecoration: "none", cursor: "pointer" }}>
                 <div sx={{ variant: "containers.card" }}>
                   <strong>{note.title}</strong>
